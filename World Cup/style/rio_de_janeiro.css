@@ -1,0 +1,84 @@
+/*--Cacher les  titres pour les images--*/
+figcaption{
+	display:none;
+	margin-top: 3%;
+}
+/*------*/
+
+/*--Style pour la premiere image--*/
+#flag{
+	width:143px;
+	height: 100px;
+	float:right;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+	margin-bottom:90px;
+}
+
+#flag img{
+	height: 100px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#flag:hover{
+	height:150px;
+}
+
+#flag:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour placer les images a droite ou gauche--*/
+.right{
+	float:right;
+	margin-left:1.5%;
+	border: solid 1px;
+	width:280px;
+	height: 190px;
+}
+.right img{
+	width:280px;
+	height: 190px;
+}
+.left{
+	margin-left:-1%;
+	float:left;
+	border: solid 1px;
+	width:280px;
+	height: 190px;
+}
+.left img{
+	width:280px;
+	height: 190px;
+}
+/*------*/
+
+/*--Style pour la derniere image--*/
+#pana{
+	width:300px;
+	height: 200px;
+	float:right;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+	margin-bottom:130px;
+}
+
+#pana img{
+	width:300px;
+	height: 200px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#pana:hover{
+	height:250px;
+}
+
+#pana:hover>figcaption{
+	display:inline-block;
+}
+/*------*/

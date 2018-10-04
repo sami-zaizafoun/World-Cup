@@ -1,0 +1,104 @@
+/*--Style pour la premiere image--*/
+#ger{
+	width:150px;
+	height: 160px;
+	float:right;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+}
+
+#ger .flag{
+	height: 150px;
+}
+/*------*/
+
+/*--Cacher le titre pour l'image--*/
+#ger figcaption{
+	display:none;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#ger:hover{
+	height:230px;
+}
+
+#ger:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour le tableau des joueurs*/
+table{
+	margin-left:14%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+
+td{
+	line-height: 23px;
+}
+/*------*/
+
+/*--Placer les colonnes aux bons endroits*/
+.left{
+	float: left;
+	width:35%;
+}
+
+.mid{
+	margin-left: 51%;
+	margin-bottom: 2%;
+}
+/*------*/
+
+#vain{
+	margin-top:65%;
+}
+
+/*--Style pour l'image--*/
+#win{
+	margin-left: 30%;
+	width: 457px;
+	height:370px;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+}
+
+#win img{
+	height: 300px;
+}
+/*------*/
+
+/*--Style pour les trophée dans le titre--*/
+#win .tro{
+	width:60px;
+	height: 60px;
+	transform: rotate(-8deg);
+	margin-right: 5%;
+}
+
+#win .tro1{
+	width:60px;
+	height: 60px;
+	transform: rotate(8deg);
+	margin-left:5%;
+}
+/*------*/
+
+#players{
+	position:absolute;
+	margin-left:545px;
+	margin-top:1260px;
+	display:none;
+	height:185px;
+	width:140px;
+	border: 2px solid;
+}

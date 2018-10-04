@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta  charset="utf-8" />
+		<title> World Cup 2014</title>
+		
+		<!--Faire appel au .css+.js-->
+		<link rel="stylesheet"  type="text/css"  media="screen" href="../style/commun.css" />
+		<link rel="stylesheet"  type="text/css"  media="screen" href="../style/hist.css" />
+		<script src="../JS/monscript.js"></script>
+		<!--*************-->
+		
+		<link rel="shortcut icon" href="../images/logo.ico" />
+	</head>	
+	<body>
+		
+		<!--L'image du haut-->
+		<header>
+			<a href="../accueil.html"><img src="../images/home.png" id="homeb" alt="home"></a>
+			<span id="menub" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</header>
+		<!--*************-->
+		
+		<!--Menu sur le cote-->
+		<aside>
+		<nav id="open" class="navigation">
+		<a href="#" class="buttons" id="closebtn" onclick="closeNav()">&times;</a> 
+		
+		<!--Musique-->
+		<audio id="music">
+			<source src="../music/theme.ogg" type="audio/ogg">
+			<source src="../music/theme.mp3" type="audio/mp3">
+  		</audio> 
+		<a href="#" class="buttons" id="play-pause" onclick="music()">&#9654;</a>
+		<a href="#" class="buttons" id="volume" onclick="volume()">&#128265;</a>
+		<input id="bar" type="range" min="0" max="1" step="0.01" value="0.4" onchange="change();changeV(this.value)" />		
+		<!--*************-->
+		
+		  <ul class="mainmenu">
+			<li class="main"><a href="../accueil.html">Accueil</a>
+				<ul class="menu submenu">
+					<li><a href="../accueil.html#stad">Stade Maracanã</a>
+						<ul class="menu submenu2">
+							<li><a href="../accueil.html#his">Historique</a></li>
+							<li><a href="../accueil.html#arch">Architecture du stade</a></li>
+						</ul>
+					</li>
+					<li><a href="../accueil.html#cou">La Coupe du Monde en 2014</a>
+						<ul class="menu submenu2">
+							<li><a href="../accueil.html#his1">Historique</a></li>
+							<li><a href="../accueil.html#pre">Préparation de l’événement</a>
+								<ul class="menu submenu3">
+									<li><a href="../accueil.html#org">Désignation du pays organisateur</a></li>
+									<li><a href="../accueil.html#log">Désignation du logo</a></li>
+								</ul>
+							</li>
+							<li><a href="../accueil.html#fin">La finale</a></li>
+							<li><a href="../accueil.html#bal">Ballon d'or du meilleur joueur</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a href="rio_de_janeiro.html">Rio de Janeiro</a>
+				<ul class="menu submenu">
+					<li><a href="rio_de_janeiro.html#his3">L'histoire du pays</a></li>
+					<li><a href="rio_de_janeiro.html#si">Sites touristiques</a>
+						<ul class="menu submenu2">
+							<li><a href="rio_de_janeiro.html#pao">Pão de Açúcar</a></li>
+							<li><a href="rio_de_janeiro.html#cor">Corcovado</a></li>
+							<li><a href="rio_de_janeiro.html#cop">Copacabana et Ipanema</a></li>
+						</ul>
+					</li>
+					<li><a href="rio_de_janeiro.html#sp">Les sports</a>
+						<ul class="menu submenu2">
+							<li><a href="rio_de_janeiro.html#ft">Football</a></li>
+							<li><a href="rio_de_janeiro.html#jx">Jeux panaméricains</a></li>
+							<li><a href="rio_de_janeiro.html#jo">Jeux olympiques</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a class="active" href="hist.html">L'histoire du football</a>
+				<ul class="menu submenu">
+					<li><a href="hist.html#qqs">Quelques informations générales</a></li>
+					<li><a href="hist.html#reg">Les règles du jeu</a></li>
+					<li><a href="hist.html#arb">L'arbitre</a></li>
+					<li><a href="hist.html#sup">Les supporters</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href="allemagne.html">L'équipe d'Allemagne</a>
+				<ul class="menu submenu">
+					<li><a href="allemagne.html#his2">L'histoire de l'épquipe</a></li>
+					<li><a href="allemagne.html#pal">Palmarès</a></li>
+					<li><a href="allemagne.html#eq">Équipe actuelle</a></li>
+					<li><a href="allemagne.html#vain">Vainqueurs de la coupe du monde</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href="messi.html">Lionel Messi</a>
+				<ul class="menu submenu">
+					<li><a href="messi.html#bio">Biographie</a></li>
+					<li><a href="messi.html#sty">Style de jeu</a></li>
+					<li><a href="messi.html#pnt">Les point culminants de sa carrière</a></li>
+				</ul>
+			</li>
+		  </ul>
+		</nav>
+		</aside>
+		<!--*************-->
+		
+		<div>		
+			<h3><u>L'histoire du football</u>:</h3>
+				<h4 id="qqs"><u>Quelques informations générales</u>:</h4>
+					
+					<p>Le football ou soccer (en Amérique du Nord), est un sport collectif qui se joue principalement au pied avec un ballon sphérique.
+					Il oppose deux équipes de onze joueurs dans un stade, que ce soit sur un terrain gazonné ou sur un plancher. L'objectif de chaque 
+					camp est de mettre le ballon dans le but adverse, sans utiliser les bras, et de le faire plus souvent que l'autre équipe.</p>
+					
+					<!--Image d'un ancien jeu de foot-->
+					<figure id="bla">
+						<img src="../images/bla.jpg" alt="bla">
+					</figure>
+					<!--*************-->
+
+					<p>Codifié par les Britanniques à la fin du XIXe siècle, le football s'est doté en 1904 d'une fédération internationale, 
+					la FIFA. Pratiqué en 2006 par environ 264 millions de joueurs à travers le monde, le football possède le statut de sport
+					numéro un dans la majorité des pays. Certains continents, comme l'Afrique, l'Amérique du Sud et l'Europe, sont même presque 
+					entièrement dominés par cette discipline. La simplicité du jeu et le peu de moyens nécessaires à sa pratique expliquent en partie ce succès.</p>
+
+					<p>Le calendrier est dominé par deux types d'épreuves : celles concernant les clubs et celles des équipes nationales. La Coupe du monde est
+					l'épreuve internationale la plus prestigieuse. Elle a lieu tous les quatre ans depuis 1930 (sauf entre 1938 et 1950). Pour les clubs,
+					championnats nationaux et autres coupes sont au programme des compétitions.</p>
+
+					<p>En compétition de clubs, la Ligue des champions de l'UEFA, disputée en Europe mais qui possède des équivalents sur les autres
+					continents, est le trophée le plus convoité de ce sport, malgré la mise en place récente d'une Coupe du monde des clubs, encore à la recherche de prestige.</p>
+					
+				<h4 id="reg"><u>Les règles du jeu</u>:</h4>
+				
+					<p>Le football compte dix-sept « lois du jeu » régies par l'International Board. Le règlement est le même pour les professionnels et les
+					amateurs, en senior ou chez les jeunes. La FIFA veille à l'application uniforme des mêmes lois du jeu partout dans le monde.</p>
+
+					<p>Les 17 lois du jeu sont:</p>
+						
+						<!--Tableau des regles-->
+						<table>
+							<tr>
+								<td>
+									<ul>
+										<li> (1) Le terrain de jeu</li>
+										<li> (2) Le ballon</li>
+										<li> (3) Nombre de joueurs</li>
+										<li> (4) Équipement des joueurs</li>
+										<li> (5) L'arbitre</li>
+										<li> (6) Les arbitres assistants</li>
+										<li> (7) La durée du match</li>
+										<li> (8) Le coup d'envoi et reprise du jeu</li>
+										<li> (9) Ballon en jeu et hors du jeu</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> (10) But marqué</li>
+										<li> (11) Le hors-jeu</li>
+										<li> (12) Fautes et comportement antisportif</li>
+										<li> (13) Coup franc</li>
+										<li> (14) Coup de pied de réparation (penalty)</li>
+										<li> (15) Rentrée de touche</li>
+										<li> (16) Coup de pied de but</li>
+										<li> (17) Coup de pied de coin (corner)</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<!--*************-->
+						
+					<h4 id="arb"><u>L'arbitre</u>:</h4>				
+						
+						<!--Image des arbitres-->
+						<figure id="ref">
+							<img src="../images/ref.jpg" alt="ref">
+							<figcaption>Trio arbitral</figcaption>
+						</figure>
+						<!--*************-->
+						
+						<p>Sur le terrain, l'application du règlement est confiée à un corps arbitral qui se met en place définitivement en 1891. 
+						Un temps évoqué, le double arbitrage était en usage au début du jeu et un troisième arbitre, situé en tribune, prenait la décision en 
+						cas de conflit entre les deux arbitres principaux. Ce système s’avère inefficace et en 1891, le referee, jadis placé en tribune, est 
+						désormais positionné sur le terrain, tandis que la doublette d’arbitres (umpires) est mise sur les bords de touche (linesmen). L'arbitre
+						central est rapidement doté de larges pouvoirs afin de diriger pleinement la partie. Avant ces réformes, les penalties n'existent pas et
+						l'arbitre n'a pas le contrôle du temps de jeu. Depuis 1874, les umpires peuvent siffler des coups francs et expulser des joueurs. Avant
+						cette date, les expulsions sont discutées avec les capitaines. Les cartons jaunes et rouges sont introduits en 1970 à la suite d'un
+						incident au cours du match de Coupe du monde Angleterre-Argentine en 1966. Expulsé, le capitaine argentin Antonio Rattín refuse de quitter 
+						le terrain prétextant ne pas comprendre l'arbitre allemand Rudolf Kreitlein ; l'affaire dure sept minutes. Pour éviter ce genre de problèmes, 
+						le Board met en place le système universel de cartons jaunes et rouges.</p>
+						
+						<p>Le corps arbitral est aujourd'hui constitué d'un arbitre principal qui se déplace sur le terrain, ainsi que deux arbitres assistants évoluant
+						le long de chaque ligne de touche et munis de drapeaux. Dans le milieu professionnel, un quatrième arbitre est présent pour assurer un remplacement
+						en cas de blessure de l'un des trois autres ; il sert également à signaler les changements de joueurs et à veiller au maintien de l'ordre dans les
+						zones techniques (bancs des joueurs) et au bord du terrain. Au plus haut niveau, les arbitres subissent des tests physiques réguliers (test de Cooper, notamment).</p>
+
+						<p>Depuis la fin du XXe siècle, le recours à la vidéo est souvent évoqué pour remédier aux problèmes d’arbitrage. Ce système est toutefois très controversé,
+						notamment car il n'est pas absolument fiable et n'est pas applicable à tous les niveaux du football, des juniors aux vétérans. Le 8 mars 2008, à l'occasion de
+						sa 122e réunion annuelle, le Board suspend, jusqu'à nouvel ordre, les options technologiques après des essais peu concluants d'arbitrage vidéo testés au Japon et 
+						les difficultés techniques rencontrées par les équipes travaillant sur le contrôle de la ligne de but par des moyens électroniques. En revanche, le Board autorise 
+						la mise en place de tests avec deux arbitres assistants supplémentaires pour surveiller les surfaces de réparation.</p>
+						
+					<h4 id="sup"><u>Les supporters</u>:</h4>
+						
+						<!--Image des fans dans le stade-->
+						<figure id="bor">
+							<img src="../images/bor.jpg" alt="bor">
+							<figcaption>Les fans en folie</figcaption>
+						</figure>
+						<!--*************-->
+						
+						<p>Le football entraîne un vaste mouvement de soutien populaire, parfois inconditionnel : le phénomène des supporters. Les fans d'un même club peuvent s'organiser
+						en mouvements appelés groupes ou associations de supporters. Certains groupes versent dans le hooliganisme.</p>
+
+						<p class="marg">Le phénomène des supporters existe depuis l'Antiquité, et avant même la codification du football, tous les bénéfices et travers de ce mouvement sont déjà bien connus.
+						Le cricket anglais est ainsi durement touché par une vague de violence de ses supporters des années 1770 au début du XIXe siècle. L'écrasante majorité
+						des supporters sportifs sont pacifiques et festifs, il est donc réducteur de traiter uniquement ce thème sous l'angle de la violence. De même, réduire le supporter
+						à un simple consommateur de produits de merchandising est également un lieu commun. Les autorités sportives, elles-mêmes, n'ont d'ailleurs toujours pas intégré de plein
+						droit les supporters au sein de la « famille du foot ». Michel Platini, président de l'UEFA, a prévu de corriger cet oubli.</p>
+
+						<p >Les supporters ont pourtant un rôle déterminant dans le financement des clubs, l'animation des stades et permettent aux joueurs de donner le meilleur d'eux-mêmes
+						sur le terrain. Le surnom de « douzième homme » n'est pas usurpé. Ils représentent également une forme de contre-pouvoir face aux dirigeants. Ainsi, en Angleterre et 
+						en France, des déménagements de clubs, à l'américaine, sont tentés par certains dirigeants à la recherche de meilleurs « marchés ». La pression des supporters est telle que
+						ces déménagements purement mercantiles sont désormais interdits en France après la fusion controversée du Toulouse FC première version avec le Red Star en 1967 et exceptionnels
+						en Angleterre : cas isolé du Wimbledon FC qui déménage à Milton Keynes en 2003 devenant le Milton Keynes Dons Football Club. En réponse à ce déménagement, les fans 
+						de Wimbledon ont créé leur propre club : AFC Wimbledon.</p>
+
+						<p>Les rivalités dans le football touchent principalement les supporters. Les derbies et autres affiches de gala constituent des rendez-vous importants
+						pour les fans qui rivalisent alors dans les domaines du chant ou de l'animation des tribunes (et parfois de la violence) pour prendre un ascendant sur les supporters rivaux.
+						Les rivalités les plus spectaculaires sont en Europe celles opposant Celtic et Rangers à Glasgow, tandis qu'en Amérique du Sud le Super-Clasico Boca-River Plate 
+						atteint des sommets dans le genre.</p>
+						
+						<!--Image des fans sur le terrain-->
+						<figure id="att">
+							<img src="../images/att.jpg" alt="att">
+							<figcaption>Invasion de terrain</figcaption>
+						</figure>
+						<!--*************-->
+						
+						<p>Le plus souvent pacifiques et festives, les invasions de terrains à la fin de certains matches donnant notamment un titre sont également très spectaculaires. Pour des
+						raisons de sécurité, ce type de manifestation devient rare. D'autres invasions de terrains, bien moins festives, se produisent exceptionnellement à l'occasion de certaines
+						rencontres, en plein match. Ce fut notamment le cas lors du match France-Algérie du 6 octobre 2001 au Stade de France. Le match fut définitivement arrêté à un quart d'heure de la fin.</p>
+
+						<p class="marg">Après avoir compté parmi les plus violents supporters, les fans écossais sont devenus plus pacifiques depuis les années 1970. Des études ont montré une importante différence 
+						d'âge entre les fans violents et ceux qui sont festifs : 23 ans en moyenne pour les fans anglais lors de l'Euro 1988 contre 31 ans aux Danois. 15 % des supporters danois
+						étaient des femmes contre seulement 2 % chez les Anglais. Certains clubs disposent également de publics d'une fidélité à toute épreuve malgré des résultats médiocres 
+						depuis plusieurs générations. On citera pour l'exemple Newcastle UFC en Angleterre.</p>
+		</div>
+		
+		<div>
+			<!--Image retour-->
+			<a href="hist.html"><img id="retour" src="../images/ball.jpg" alt="retour" title="retour haut de page"></a>
+			<!--*************-->
+		
+			<!--Style hr-->
+			<hr class="top">
+			<hr class="bottom">	
+			<!--*************-->
+		</div>
+			
+		<footer>
+			<p><strong>Source: </strong> <a href="https://fr.wikipedia.org/wiki/Football" target="_blank">Wikipedia, Football</a></p>
+			<p>Ce TP est réalisé par Sami Zaizafoun dans le cadre d'un TP</p>
+			<p><small>Copyright &copy; etudiants de L1 de l'<abbr title=" Universite de Caen Normandie">UCN </abbr>  All rights reserved.</small></p>		
+		</footer>  
+	</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta  charset="utf-8" />
+		<title> World Cup 2014</title>
+		
+		<!--Faire appel au .css+.js-->
+		<link rel="stylesheet"  type="text/css"  media="screen" href="../style/commun.css" />
+		<link rel="stylesheet"  type="text/css"  media="screen" href="../style/allemagne.css" />
+		<script src="../JS/monscript.js"></script>
+		<!--*************-->
+		
+		<link rel="shortcut icon" href="../images/logo.ico" />
+	</head>	
+	<body>
+		
+		<!--L'image du haut-->
+		<header>
+			<a href="../accueil.html"><img src="../images/home.png" id="homeb" alt="home"></a>
+			<span id="menub" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</header>
+		<!--*************-->
+		
+		<!--Menu sur le cote-->
+		<aside>
+		<nav id="open" class="navigation">
+		<a href="#" class="buttons" id="closebtn" onclick="closeNav()">&times;</a> 
+		
+		<!--Musique-->
+		<audio id="music">
+			<source src="../music/theme.ogg" type="audio/ogg">
+			<source src="../music/theme.mp3" type="audio/mp3">
+  		</audio> 
+		<a href="#" class="buttons" id="play-pause" onclick="music()">&#9654;</a>
+		<a href="#" class="buttons" id="volume" onclick="volume()">&#128265;</a>
+		<input id="bar" type="range" min="0" max="1" step="0.01" value="0.4" onchange="change();changeV(this.value)" />		
+		<!--*************-->
+		
+		  <ul class="mainmenu">
+			<li class="main"><a href="../accueil.html">Accueil</a>
+				<ul class="menu submenu">
+					<li><a href="../accueil.html#stad">Stade Maracanã</a>
+						<ul class="menu submenu2">
+							<li><a href="../accueil.html#his">Historique</a></li>
+							<li><a href="../accueil.html#arch">Architecture du stade</a></li>
+						</ul>
+					</li>
+					<li><a href="../accueil.html#cou">La Coupe du Monde en 2014</a>
+						<ul class="menu submenu2">
+							<li><a href="../accueil.html#his1">Historique</a></li>
+							<li><a href="../accueil.html#pre">Préparation de l’événement</a>
+								<ul class="menu submenu3">
+									<li><a href="../accueil.html#org">Désignation du pays organisateur</a></li>
+									<li><a href="../accueil.html#log">Désignation du logo</a></li>
+								</ul>
+							</li>
+							<li><a href="../accueil.html#fin">La finale</a></li>
+							<li><a href="../accueil.html#bal">Ballon d'or du meilleur joueur</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a href="rio_de_janeiro.html">Rio de Janeiro</a>
+				<ul class="menu submenu">
+					<li><a href="rio_de_janeiro.html#his3">L'histoire du pays</a></li>
+					<li><a href="rio_de_janeiro.html#si">Sites touristiques</a>
+						<ul class="menu submenu2">
+							<li><a href="rio_de_janeiro.html#pao">Pão de Açúcar</a></li>
+							<li><a href="rio_de_janeiro.html#cor">Corcovado</a></li>
+							<li><a href="rio_de_janeiro.html#cop">Copacabana et Ipanema</a></li>
+						</ul>
+					</li>
+					<li><a href="rio_de_janeiro.html#sp">Les sports</a>
+						<ul class="menu submenu2">
+							<li><a href="rio_de_janeiro.html#ft">Football</a></li>
+							<li><a href="rio_de_janeiro.html#jx">Jeux panaméricains</a></li>
+							<li><a href="rio_de_janeiro.html#jo">Jeux olympiques</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a href="hist.html">L'histoire du football</a>
+				<ul class="menu submenu">
+					<li><a href="hist.html#qqs">Quelques informations générales</a></li>
+					<li><a href="hist.html#reg">Les règles du jeu</a></li>
+					<li><a href="hist.html#arb">L'arbitre</a></li>
+					<li><a href="hist.html#sup">Les supporters</a></li>
+				</ul>
+			</li>
+			<li class="main"><a class="active" href="allemagne.html">L'équipe d'Allemagne</a>
+				<ul class="menu submenu">
+					<li><a href="allemagne.html#his2">L'histoire de l'épquipe</a></li>
+					<li><a href="allemagne.html#pal">Palmarès</a></li>
+					<li><a href="allemagne.html#eq">Équipe actuelle</a></li>
+					<li><a href="allemagne.html#vain">Vainqueurs de la coupe du monde</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href="messi.html">Lionel Messi</a>
+				<ul class="menu submenu">
+					<li><a href="messi.html#bio">Biographie</a></li>
+					<li><a href="messi.html#sty">Style de jeu</a></li>
+					<li><a href="messi.html#pnt">Les point culminants de sa carrière</a></li>
+				</ul>
+			</li>
+		  </ul>
+		</nav>
+		</aside>
+		<!--*************-->
+		
+		<!--Faire appel a toutes les images-->
+		<script>
+			for(var i=1 ; i<24 ; i++){
+				document.write('<img id="players" src="../player_image/'+i+'.jpg" alt="player">')	
+			}								
+		</script>
+		<!--*************-->
+		<div>		
+			<h3><u>Équipe d'Allemagne</u>:</h3>
+				<h4 id="his2"><u>L'histoire de l'épquipe</u>:</h4>
+					
+					<p>L'équipe d'Allemagne de football est constituée par une sélection des meilleurs joueurs allemands sous l'égide de la DFB. 
+					Cet organisme, fédération de l'Allemagne unifiée avant la création de la République démocratique allemande, n'avait autorité 
+					que sur le football de la RFA de 1949 à 1990 et a ensuite repris son rôle pan-allemand. Le premier match de l'équipe allemande 
+					réunifiée a lieu le 19 décembre 1990 à Stuttgart contre la Suisse. Pendant son existence, l'équipe nationale est-allemande 
+					était sous l'autorité de sa propre fédération, la Fédération d'Allemagne de l'Est de football. La présente page ne traite
+					donc, pendant les années de séparation, que de l'équipe de RFA.</p>
+					
+					<!--Image de l'embleme d'Allemagne-->
+					<figure id="ger">
+						<img class="flag" src="../images/ger.jpg" alt="ger">
+						<figcaption>&nbsp; Emblème de <br> l'épquipe d'Allemagne</figcaption>
+					</figure>
+					<!--*************-->
+
+					<p>L'équipe d'Allemagne de football compte l'un des plus beaux palmarès du football mondial avec un record 
+					de huit finales de Coupe du monde dont quatre remportées (1954, 1974, 1990 et 2014) et six finales de championnat 
+					d'Europe pour trois victoires (1972, 1980 et 1996). Elle a été la troisième équipe de l'histoire à remporter le 
+					trophée planétaire (après l'Uruguay et l'Italie), et la première à réaliser le doublé Championnat d'Europe-Championnat
+					du monde en 1972 et 1974. Par ailleurs, l'Allemagne a terminé sur le podium lors des quatre dernières éditions de la 
+					compétition planétaire (2e en 2002, 3e en 2006 et en 2010 et 1er en 2014) ce qui en fait la première formation à atteindre
+					quatre fois de suite les demi-finales de la Coupe du monde.</p>
+
+					<p>En gagnant pour la quatrième fois la Coupe du monde en 2014, l'équipe d'Allemagne égale le nombre de
+					victoires de l'Italie, mais reste toujours derrière le Brésil qui en a conquis cinq. L'Allemagne détient en outre le
+					record de victoires au championnat d'Europe avec l'Espagne qui l'a rejointe en 2012.</p>
+					
+				<h4 id="pal"><u>Palmarès</u>:</h4>
+				
+					<p>Le tableau suivant liste le palmarès de l’équipe d'Allemagne dans les différentes compétitions internationales officielles.</p>
+					
+					<!--Tableau des competitions-->
+					<table>
+						<tr>
+							<th>Compétitions internationales</th>
+							<th>Compétitions continentales</th>
+						</tr>
+						<tr>
+							<td>
+								<ul class="table"> 
+									<li class="table">Coupe du monde (18 participations):
+										<ul class= "table">
+											<li class="table">Vainqueur : 1954, 1974, 1990 et 2014.</li>
+											<li class="table">Finaliste : 1966, 1982, 1986 et 2002.</li>
+											<li class="table">Troisième : 1934, 1970, 2006 et 2010.</li>
+										</ul>
+									</li>
+									<li class="table">Coupe des confédérations (2 participations):
+										<ul class= "table">
+											<li class="table">Troisième : 2005.</li>
+										</ul>
+									</li>
+									<li class="table">Jeux olympiques (9 participations):
+										<ul class="table">
+											<li class="table">Finaliste : 2016.</li>
+											<li class="table">Troisième : 1964 et 1988.</li>
+										</ul>
+									</li>
+								</ul>						
+							</td>
+							<td>
+								<ul class="table">
+									<li class="table">Championnat d'Europe (12 participations):
+										<ul class="table">
+											<li class="table">Vainqueur : 1972, 1980 et 1996.</li>
+											<li class="table">Finaliste : 1976, 1992 et 2008.</li>
+											<li class="table">Demi-finaliste : 1988, 2012 et 2016.</li>
+										</ul>
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<!--*************-->
+					
+				<h4 id="eq"><u>Équipe actuelle</u>:</h4>
+				
+					<!--Le coache-->
+					<table class="mid">
+						<tr>
+							<th>Entraîneur</th>
+						</tr>
+						<tr>
+							<td onmouseover="show(1)" onmouseout="hide(1)">Joachim Löw</td>
+						</tr>
+					</table>
+					<!--*************-->
+					
+					<!--Tableau des gardiens + défenseurs-->
+					<table class="left">
+						<tr>
+							<th>Position</th>
+							<th>Nom du joueur</th>
+						</tr>
+						<tr>
+							<th rowspan="3">Gardiens:</th>
+							<td onmouseover="show(2)" onmouseout="hide(2)">(1) Manuel Neuer</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(3)" onmouseout="hide(3)">(12) Bernd Leno</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(4)" onmouseout="hide(4)">(22) Marc-André ter Stegen</td>
+						</tr>
+						<tr>
+							<th rowspan="8">Défenseurs:</th>
+							<td onmouseover="show(5)" onmouseout="hide(5)">(2) Shkodran Mustafi</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(6)" onmouseout="hide(6)">(3) Jonas Hector</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(7)" onmouseout="hide(7)">(4) Benedikt Höwedes</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(8)" onmouseout="hide(8)">(5) Mats Hummels</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(9)" onmouseout="hide(9)">(14) Emre Can</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(10)" onmouseout="hide(10)">(16) Jonathan Tah</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(11)" onmouseout="hide(11)">(17) Niklas Süle</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(12)" onmouseout="hide(12)">(21) Joshua Kimmich</td>
+						</tr>
+					</table>
+					<!--*************-->
+					
+					<!--Tableau des milieux + attaquants-->
+					<table class="left">
+						<tr>
+							<th>Position</th>
+							<th>Nom du joueur</th>
+						</tr>
+						<tr>
+							<th rowspan="9">Milieux de terrain:</th>
+							<td onmouseover="show(13)" onmouseout="hide(13)">(6) Sami Khedira</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(14)" onmouseout="hide(14)">(7) Julian Brandt</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(15)" onmouseout="hide(15)">(8) Toni Kroos</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(16)" onmouseout="hide(16)">(10) Mesut Özil</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(17)" onmouseout="hide(17)">(11)Julian Draxler</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(18)" onmouseout="hide(18)">(13) Thomas Müller</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(19)" onmouseout="hide(19)">(15) Julian Weigl</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(20)" onmouseout="hide(20)">(18) Max Meyer</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(21)" onmouseout="hide(21)">(20) Karim Bellarabi</td>
+						</tr>
+						<tr>
+							<th rowspan="2">Attaquants:</th>
+							<td onmouseover="show(22)" onmouseout="hide(22)">(19) Mario Götze</td>
+						</tr>
+						<tr>
+							<td onmouseover="show(23)" onmouseout="hide(23)">(23) Kevin Volland</td>
+						</tr>
+					</table>
+					<!--*************-->
+					
+				<h4 id="vain"><u>Vainqueurs de la coupe du monde</u>:</h4>
+					
+					<!--Image du victoire-->
+					<figure id="win">
+						<img src="../images/win.jpg" alt="win">
+						<figcaption>
+							<!--Les trophees-->
+							<img class="tro" src="../images/tro.jpg" alt="tro">
+							<strong>Les vainqueurs</strong>
+							<img class="tro1" src="../images/tro.jpg" alt="tro">
+							<!--*************-->
+						</figcaption>
+					</figure>
+					<!--*************-->
+		</div>
+		
+		<div>
+			<!--Image retour-->
+			<a href="allemagne.html"><img id="retour" src="../images/ball.jpg" alt="retour" title="retour haut de page"></a>
+			<!--*************-->
+		
+			<!--Style hr-->
+			<hr class="top">
+			<hr class="bottom">	
+			<!--*************-->
+		</div>
+		
+		<footer>
+			<p><strong>Source: </strong> <a href="https://fr.wikipedia.org/wiki/%C3%89quipe_d%27Allemagne_de_football" target="_blank">Wikipedia, Equipes d'Allemagne</a></p>
+			<p>Ce TP est réalisé par Sami Zaizafoun dans le cadre d'un TP</p>
+			<p><small>Copyright &copy; etudiants de L1 de l'<abbr title=" Universite de Caen Normandie">UCN </abbr>  All rights reserved.</small></p>
+		</footer>  
+	</body>
+</html>

@@ -1,0 +1,124 @@
+/*--Cacher les  titres pour les images--*/
+figcaption{
+	margin-bottom: 3%;
+	margin-top:3%;
+	display:none;
+}
+/*------*/
+
+/*--Style pour la premiere image--*/
+#messi{
+	width: 180px;
+	height: 200px;
+	float:right;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+}
+
+#messi img{
+	width: 180px;
+	height: 200px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#messi:hover{
+	height:250px;
+}
+
+#messi:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour l'image--*/
+#barc{
+	width:231px;
+	height: 145px;
+	float: left;
+	text-align: center;
+	border: solid 1px;
+	background-color:#f1f1f1;
+	margin-bottom:3%;
+}
+
+#barc img{
+	height: 145px;
+}
+
+.marg{
+	margin-bottom:5%;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#barc:hover{
+	height:185px;
+}
+
+#barc:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour l'image--*/
+#arg{
+	width:225.7px;
+	height: 145px;
+	float: right;
+	text-align: center;
+	border: solid 1px;
+	background-color:#f1f1f1;
+	margin-bottom:3%;
+}
+
+#arg img{
+	height: 145px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#arg:hover{
+	height:185px;
+}
+
+#arg:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour l'image--*/
+#mest{
+	width:222px;
+	height: 260px;
+	float:right;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+}
+
+#mest img{
+	width: 222px;
+	height: 260px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#mest:hover{
+	height:350px;
+}
+
+#mest:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour la balise video--*/
+video{
+	margin-left: 25%;
+	border: solid 1px;
+	width: auto;
+	height: 240px;
+}
+/*------*/

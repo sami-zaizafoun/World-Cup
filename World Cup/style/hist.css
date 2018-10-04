@@ -1,0 +1,109 @@
+/*--Cacher les  titres pour les images--*/
+figcaption{
+	display:none;
+	margin-top:3%;
+}
+/*------*/
+
+/*--Style pour la premiere image--*/
+#bla{
+	width:490px;
+	height: 200px;
+	border: solid 1px;
+	background-color:#f1f1f1;
+	margin-left: 25%;
+	margin-bottom:2%;
+}
+
+#bla img{
+	height: 200px;
+}
+/*------*/
+
+/*--Style pour la liste des regles--*/
+table{
+	margin-left: 15%;
+}
+/*------*/
+
+/*--Style pour l'image--*/
+#ref{
+	width:226px;
+	height: 300px;
+	border: solid 1px;
+	background-color:#f1f1f1;
+	float:right;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#ref img{
+	height: 300px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#ref:hover{
+	height:340px;
+}
+
+#ref:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour l'image--*/
+#bor{
+	float:right;
+	width: 407px;
+	height:250px;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+}
+
+#bor img{
+	width: 407px;
+	height: 250px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#bor:hover{
+	height:300px;
+}
+
+#bor:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour l'image--*/
+#att{
+	float:left;
+	width: 407px;
+	height:250px;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+	margin-bottom:40px;
+}
+
+#att img{
+	width: 407px;
+	height: 250px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#att:hover{
+	height:300px;
+}
+
+#att:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+.marg {
+	margin-bottom:4%;
+}

@@ -1,0 +1,93 @@
+/*--Cacher les  titres pour les images--*/
+figcaption{
+	margin-top: 3%;
+	display:none;
+}
+/*------*/
+
+/*--Un ID pour laisser une marge entre mes deux div--*/
+#top{
+	margin-top:210px;
+}
+/*------*/
+
+/*--Enlever les lignes des liens hypertextes--*/
+.nol{
+	text-decoration: none;
+}
+/*------*/
+
+/*--Style pour la premiere image--*/
+#stade{
+	float:right;
+	width:320px;
+	height: 200px;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+	position:relative;
+}
+
+#stade img{
+	width:320px;
+	height: 200px;
+}
+/*------*/
+
+/*--Faire apparaitre le titre--*/
+#stade:hover{
+	height:250px;
+}
+
+#stade:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour les autres images--*/
+.evo{
+	float:left;
+	margin-left:50px;
+	width:250px;
+	height:150px;
+	border: solid 1px;
+	text-align: center;
+	background-color:#f1f1f1;
+}
+
+.evo img{
+	width:250px;
+	height: 150px;
+}
+/*------*/
+
+/*--Faire apparaitre les titres--*/
+.evo:hover{
+	height: 200px;;
+}
+
+.evo:hover>figcaption{
+	display:inline-block;
+}
+/*------*/
+
+/*--Style pour le logo--*/
+#logo{
+	margin-left:-10px;
+	float:left;
+}
+
+#logo img{
+	width: 90px;
+	height: 85px;
+}
+/*------*/
+
+/*--Style pour la balise video--*/
+video{
+	margin-left: 25%;
+	border: solid 1px;
+	width: auto;
+	height: 240px;
+}
+/*------*/

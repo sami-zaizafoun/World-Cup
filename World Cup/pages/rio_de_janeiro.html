@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta  charset="utf-8" />
+		<title> World Cup 2014</title>
+		
+		<!--Faire appel au .css+.js-->
+		<link rel="stylesheet"  type="text/css"  media="screen" href="../style/commun.css" />
+		<link rel="stylesheet"  type="text/css"  media="screen" href="../style/rio_de_janeiro.css" />
+		<script src="../JS/monscript.js"></script>
+		<!--*************-->
+		
+		<link rel="shortcut icon" href="../images/logo.ico" />
+	</head>	
+	<body>
+		
+		<!--L'image du haut-->
+		<header>
+			<a href="../accueil.html"><img src="../images/home.png" id="homeb" alt="home"></a>
+			<span id="menub" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</header>
+		<!--*************-->
+		
+		<!--Menu sur le cote-->
+		<aside>
+		<nav id="open" class="navigation">
+		<a href="#" class="buttons" id="closebtn" onclick="closeNav()">&times;</a> 
+		
+		<!--Musique-->
+		<audio id="music">
+			<source src="../music/theme.ogg" type="audio/ogg">
+			<source src="../music/theme.mp3" type="audio/mp3">
+  		</audio> 
+		<a href="#" class="buttons" id="play-pause" onclick="music()">&#9654;</a>
+		<a href="#" class="buttons" id="volume" onclick="volume()">&#128265;</a>
+		<input id="bar" type="range" min="0" max="1" step="0.01" value="0.4" onchange="change();changeV(this.value)" />		
+		<!--*************-->
+		
+		  <ul class="mainmenu">
+			<li class="main"><a href="../accueil.html">Accueil</a>
+				<ul class="menu submenu">
+					<li><a href="../accueil.html#stad">Stade Maracanã</a>
+						<ul class="menu submenu2">
+							<li><a href="../accueil.html#his">Historique</a></li>
+							<li><a href="../accueil.html#arch">Architecture du stade</a></li>
+						</ul>
+					</li>
+					<li><a href="../accueil.html#cou">La Coupe du Monde en 2014</a>
+						<ul class="menu submenu2">
+							<li><a href="../accueil.html#his1">Historique</a></li>
+							<li><a href="../accueil.html#pre">Préparation de l’événement</a>
+								<ul class="menu submenu3">
+									<li><a href="../accueil.html#org">Désignation du pays organisateur</a></li>
+									<li><a href="../accueil.html#log">Désignation du logo</a></li>
+								</ul>
+							</li>
+							<li><a href="../accueil.html#fin">La finale</a></li>
+							<li><a href="../accueil.html#bal">Ballon d'or du meilleur joueur</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a class="active" href="rio_de_janeiro.html">Rio de Janeiro</a>
+				<ul class="menu submenu">
+					<li><a href="rio_de_janeiro.html#his3">L'histoire du pays</a></li>
+					<li><a href="rio_de_janeiro.html#si">Sites touristiques</a>
+						<ul class="menu submenu2">
+							<li><a href="rio_de_janeiro.html#pao">Pão de Açúcar</a></li>
+							<li><a href="rio_de_janeiro.html#cor">Corcovado</a></li>
+							<li><a href="rio_de_janeiro.html#cop">Copacabana et Ipanema</a></li>
+						</ul>
+					</li>
+					<li><a href="rio_de_janeiro.html#sp">Les sports</a>
+						<ul class="menu submenu2">
+							<li><a href="rio_de_janeiro.html#ft">Football</a></li>
+							<li><a href="rio_de_janeiro.html#jx">Jeux panaméricains</a></li>
+							<li><a href="rio_de_janeiro.html#jo">Jeux olympiques</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a href="hist.html">L'histoire du football</a>
+				<ul class="menu submenu">
+					<li><a href="hist.html#qqs">Quelques informations générales</a></li>
+					<li><a href="hist.html#reg">Les règles du jeu</a></li>
+					<li><a href="hist.html#arb">L'arbitre</a></li>
+					<li><a href="hist.html#sup">Les supporters</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href="allemagne.html">L'équipe d'Allemagne</a>
+				<ul class="menu submenu">
+					<li><a href="allemagne.html#his2">L'histoire de l'épquipe</a></li>
+					<li><a href="allemagne.html#pal">Palmarès</a></li>
+					<li><a href="allemagne.html#eq">Équipe actuelle</a></li>
+					<li><a href="allemagne.html#vain">Vainqueurs de la coupe du monde</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href="messi.html">Lionel Messi</a>
+				<ul class="menu submenu">
+					<li><a href="messi.html#bio">Biographie</a></li>
+					<li><a href="messi.html#sty">Style de jeu</a></li>
+					<li><a href="messi.html#pnt">Les point culminants de sa carrière</a></li>
+				</ul>
+			</li>
+		  </ul>
+		</nav>
+		</aside>
+		<!--*************-->
+		
+		<div>			
+			<h3><u>Rio de Janeiro</u>:</h3>
+				<h4 id="his3"><u>L'histoire du pays</u>:</h4>
+					
+					<!--Image du drapeau-->
+					<figure id="flag">
+						<img src="../images/flag.png" alt="flag">
+						<figcaption>&nbsp; Drapeau de<br> Rio de Janeiro </figcaption>
+					</figure>
+					<!--*************-->
+					
+					<p>Rio de Janeiro est la deuxième plus grande ville du Brésil après São Paulo. Située au sud-est du pays, elle est la capitale 
+					de l'État de Rio de Janeiro. Avec ses 6,1 millions d'habitants intra-muros et 12,62 millions dans l'aire urbaine, Rio de Janeiro
+					est l'une des métropoles les plus importantes du continent américain.</p>
+					
+					<p>Elle est mondialement connue pour son carnaval, ses plages (Copacabana, Leblon et Ipanema) ainsi que sa statue du Christ Rédempteur
+					au sommet du Corcovado. Elle fut capitale du Royaume-Uni de Portugal, du Brésil et des Algarves, à la suite de la fuite de la cour portugaise
+					lors de l'invasion des troupes napoléoniennes (1808-1821), puis de l'Empire du Brésil (1822-1889), de la República Velha (1889-1930), de
+					l’Estado Novo (1937-1945) et du début de la Deuxième République jusqu'en 1960.</p>
+
+					<p>En 2013, la ville a accueilli les Journées mondiales de la jeunesse, puis en 2014 elle accueille la finale de la Coupe du monde de football 
+					et enfin, en 2016, les Jeux olympiques d'été.</p>
+					
+				<h4 id="si"><u>Sites touristiques</u>:</h4>
+					<!--Les sous-sous-titres-->
+					
+					<!--Image du pain de sucre-->
+						<figure class="right">
+							<img src="../images/pain_jour.jpg" alt="Pain de Sucre">			
+						</figure>
+						<!--*************-->
+						
+					<h5 id="pao"><u>Le Pain de Sucre (Pão de Açúcar)</u>:</h5>
+						
+						<p>Le Pain de Sucre est un pic rocheux à l'altitude de 395 mètres et à la forme si singulière qui a toujours été le symbole de Rio. Les Indigènes
+						l'appelaient autrefois Pau-nd-Acuqua, ce qui signifie « haut promontoire pointu et isolé ». Pour les Portugais cela sonnait comme pão de açúcar, 
+						et le pic lui-même leur rappelait la forme de ces moules d'argile utilisés pour faire des pains de sucre. Le nom portugais est resté. À l'ouest,
+						on peut découvrir des panoramas de toute beauté, où s'étendent les plages de Leme, Copacabana, Ipanema et Leblon, bordées par les montagnes.
+						À vos pieds, vous apercevrez les quartiers de Botafogo et de Flamengo avec le Corcovado surmonté du Christ Rédempteur. Quelle que soit l'heure, 
+						la vue depuis le Pain de Sucre est splendide.</p><br>
+						
+					<hr>					
+					<h5 id="cor"><u>Corcovado</u>:</h5>
+						
+						<!--Image de Jesus-->
+						<figure class="left">
+							<img src="../images/christ.jpg" alt="Christ">			
+						</figure>
+						<!--*************-->
+						
+						<p>La célèbre statue du Christ Rédempteur (Cristo Redentor), bras en croix, se dresse sur le pic du Corcovado d'une hauteur de 710 mètres et 
+						que l'on peut apercevoir de tous les quartiers de Rio. La statue mesure 38 mètres de haut. De simple monument religieux à ses débuts, elle est 
+						devenue au fil des ans un des emblèmes reconnus internationalement de la ville. L'œuvre, datant de 1931, est due à la collaboration du sculpteur
+						français Paul Landowski et de l'architecte brésilien Heitor da Silva Costa. En 2007, la statue du Christ Rédempteur a été choisie comme l'une 
+						des Sept nouvelles merveilles du monde par des internautes allant voter sur un site web indépendant et par téléphone ; le soutien à la candidature 
+						brésilienne à cette élection avait fait l'objet d'une campagne de soutien privée puis publique. Autour du Corcovado s'étend la magnifique forêt 
+						de Tijuca qui s'avance presque jusqu'au cœur même de la ville.</p><br>
+						
+					<hr>					
+					<h5 id="cop"><u>Copacabana et Ipanema</u>:</h5>
+						
+						<!--Image de la plage-->
+						<figure class="right">
+							<img src="../images/plage.jpg" alt="plage">			
+						</figure>
+						<!--*************-->
+						
+						<p>Copacabana et son prolongement au nord, le Leme, avec ses six kilomètres de longueur qui décrivent une courbe parfaite reste certainement la
+						plage préférée des étrangers. C'est dans les années 1920 qu'elle acquit sa notoriété, avec la construction, en 1923 du prestigieux Copacabana Palace,
+						le seul hôtel de luxe de toute l'Amérique latine à l'époque. En été, sa population se compte par centaine de milliers. Les vendeurs de boissons, de 
+						lotions solaires, de chapeaux, de sandales et de cerfs-volants arpentent la plage à longueur de journée.</p>
+
+						<p>La plage d'Ipanema se situe dans le quartier résidentiel le plus sélect de la ville. Aujourd'hui, Ipanema est le centre de la mode et de la sophistication.
+						Les plus luxueuses boutiques de Rio bordent les rues d'Ipanema et de Leblon. La plage d'Ipanema, moins étendue que celle de Copacabana, est le lieu de 
+						rendez-vous de la jeunesse dorée de Rio (Poste 9) et de la communauté homosexuelle. Moins animée et moins bruyante que Copacabana, Ipanema est sans doute 
+						la plus romantique des vingt-cinq plages que compte Rio.</p>
+					<!--***Fin de sous-sous-titres****-->
+					
+				<h4 id="sp"><u>Les sports</u>:</h4>
+				
+					<!--Les sous-sous-titres-->
+					<h5 id="ft"><u>Football</u>:</h5>
+						<p>La première association de football date de 1902. C'est le Fluminense Football Club. Importé d'Angleterre par un étudiant 
+						brésilien, Oscar Cox, ce sport a déchaîné les passions.</p>						
+						
+						<p>Le Brésil est le pays accueillant la quatrième coupe du monde de football du 24 juin au 16 juillet 1950 et il est aussi
+						le pays organisateur de la coupe du monde de football de 2014, douze villes du pays ont accueilli les différentes rencontres, 
+						dont Rio où les matchs ont eu lieu au Maracanã. La ville a également reçu les équipes souhaitant se qualifier pour le mondial entre 2011 et 2013.</p>						
+						
+						<!--Image des jeux pana-->
+						<figure id="pana">
+							<img src="../images/pana.jpg" alt=" pana">
+							<figcaption>Les jeux panaméricains 2007</figcaption>
+						</figure>
+						<!--*************-->
+						
+					<h5 id="jx"><u>Jeux panaméricains</u>:</h5>
+					
+						<p>La ville de Rio de Janeiro a accueilli en 2007 les quinzièmes jeux panaméricains, et s'est donc dotée de nouvelles infrastructures sportives qui 
+						seront réutilisées pour les futurs jeux olympiques.</p>
+						
+						<p>Les jeux panaméricains, se sont tenus du 13 au 29 juillet 2007. 5500 athlètes représentant 42 nations étaient aux prises dans 28 sports pour 330 podiums.</p>
+						
+						<br><br>
+						
+					<h5 id="jo"><u>Jeux olympiques</u>:</h5>
+						
+						<p>Après s'être portée candidate comme ville hôte pour les jeux olympiques de 2012, la ville a décroché l'organisation des
+						Jeux olympiques d'été de 2016, lors d'un vote le 2 octobre 2009 à Copenhague. Les jeux olympiques ont lieu à Rio du 5 au 21
+						août 2016 sur les différents sites proposés au comité olympique. Mais, le 18 juin 2016, à deux mois des Jeux, l'État de Rio 
+						(qui a la charge de ces Jeux) est en déficit de 5 milliards de dollars américains. La tenue des Jeux ne se fera pas sans la
+						participation financière de tout le pays.</p>
+					<!--***Fin de sous-sous-titres****-->	
+		</div>
+		
+		<div>
+			<!--Image retour-->
+			<a href="rio_de_janeiro.html"><img id="retour" src="../images/ball.jpg" alt="retour" title="retour haut de page"></a>
+			<!--*************-->
+		
+			<!--Style hr-->
+			<hr class="top">
+			<hr class="bottom">
+			<!--*************-->
+		</div>
+		
+		<footer>
+			<p><strong>Source: </strong> <a href="https://fr.wikipedia.org/wiki/Rio_de_Janeiro#Coupes_du_monde_de_football" target="_blank">Wikipedia, Rio de Janeiro</a></p>
+			<p>Ce TP est réalisé par Sami Zaizafoun dans le cadre d'un TP</p>
+			<p><small>Copyright &copy; etudiants de L1 de l'<abbr title=" Universite de Caen Normandie">UCN </abbr>  All rights reserved.</small></p>
+		</footer>  
+	</body>
+</html>

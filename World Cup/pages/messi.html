@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta  charset="utf-8" />
+		<title> World Cup 2014</title>
+		
+		<!--Faire appel au .css+.js-->
+		<link rel="stylesheet"  type="text/css"  media="screen" href="../style/commun.css" />
+		<link rel="stylesheet"  type="text/css"  media="screen" href="../style/messi.css" />
+		<script src="../JS/monscript.js"></script>
+		<!--*************-->
+		
+		<link rel="shortcut icon" href="../images/logo.ico" />
+	</head>	
+	<body>
+		
+		<!--L'image du haut-->
+		<header>
+			<a href="../accueil.html"><img src="../images/home.png" id="homeb" alt="home"></a>
+			<span id="menub" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</header>
+		<!--*************-->
+		
+		<!--Menu sur le cote-->
+		<aside>
+		<nav id="open" class="navigation">
+		<a href="#" class="buttons" id="closebtn" onclick="closeNav()">&times;</a> 
+		
+		<!--Musique-->
+		<audio id="music">
+			<source src="../music/theme.ogg" type="audio/ogg">
+			<source src="../music/theme.mp3" type="audio/mp3">
+  		</audio> 
+		<a href="#" class="buttons" id="play-pause" onclick="music()">&#9654;</a>
+		<a href="#" class="buttons" id="volume" onclick="volume()">&#128265;</a>
+		<input id="bar" type="range" min="0" max="1" step="0.01" value="0.4" onchange="change();changeV(this.value)" />		
+		<!--*************-->
+		
+		  <ul class="mainmenu">
+			<li class="main"><a href="../accueil.html">Accueil</a>
+				<ul class="menu submenu">
+					<li><a href="../accueil.html#stad">Stade Maracanã</a>
+						<ul class="menu submenu2">
+							<li><a href="../accueil.html#his">Historique</a></li>
+							<li><a href="../accueil.html#arch">Architecture du stade</a></li>
+						</ul>
+					</li>
+					<li><a href="../accueil.html#cou">La Coupe du Monde en 2014</a>
+						<ul class="menu submenu2">
+							<li><a href="../accueil.html#his1">Historique</a></li>
+							<li><a href="../accueil.html#pre">Préparation de l’événement</a>
+								<ul class="menu submenu3">
+									<li><a href="../accueil.html#org">Désignation du pays organisateur</a></li>
+									<li><a href="../accueil.html#log">Désignation du logo</a></li>
+								</ul>
+							</li>
+							<li><a href="../accueil.html#fin">La finale</a></li>
+							<li><a href="../accueil.html#bal">Ballon d'or du meilleur joueur</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a href="rio_de_janeiro.html">Rio de Janeiro</a>
+				<ul class="menu submenu">
+					<li><a href="rio_de_janeiro.html#his3">L'histoire du pays</a></li>
+					<li><a href="rio_de_janeiro.html#si">Sites touristiques</a>
+						<ul class="menu submenu2">
+							<li><a href="rio_de_janeiro.html#pao">Pão de Açúcar</a></li>
+							<li><a href="rio_de_janeiro.html#cor">Corcovado</a></li>
+							<li><a href="rio_de_janeiro.html#cop">Copacabana et Ipanema</a></li>
+						</ul>
+					</li>
+					<li><a href="rio_de_janeiro.html#sp">Les sports</a>
+						<ul class="menu submenu2">
+							<li><a href="rio_de_janeiro.html#ft">Football</a></li>
+							<li><a href="rio_de_janeiro.html#jx">Jeux panaméricains</a></li>
+							<li><a href="rio_de_janeiro.html#jo">Jeux olympiques</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a href="hist.html">L'histoire du football</a>
+				<ul class="menu submenu">
+					<li><a href="hist.html#qqs">Quelques informations générales</a></li>
+					<li><a href="hist.html#reg">Les règles du jeu</a></li>
+					<li><a href="hist.html#arb">L'arbitre</a></li>
+					<li><a href="hist.html#sup">Les supporters</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href="allemagne.html">L'équipe d'Allemagne</a>
+				<ul class="menu submenu">
+					<li><a href="allemagne.html#his2">L'histoire de l'épquipe</a></li>
+					<li><a href="allemagne.html#pal">Palmarès</a></li>
+					<li><a href="allemagne.html#eq">Équipe actuelle</a></li>
+					<li><a href="allemagne.html#vain">Vainqueurs de la coupe du monde</a></li>
+				</ul>
+			</li>
+			<li class="main"><a class="active" href="messi.html">Lionel Messi</a>
+				<ul class="menu submenu">
+					<li><a href="messi.html#bio">Biographie</a></li>
+					<li><a href="messi.html#sty">Style de jeu</a></li>
+					<li><a href="messi.html#pnt">Les point culminants de sa carrière</a></li>
+				</ul>
+			</li>
+		  </ul>
+		</nav>
+		</aside>
+		<!--*************-->
+		
+		<div>
+		
+			<h3><u>Lionel Messi</u>:</h3>
+				<h4 id="bio"><u>Biographie</u>:</h4>
+					
+					<!--Image de messi-->
+					<figure id="messi">
+						<img src="../images/messi.jpg" alt="messi">
+						<figcaption>Lionel Messi<br> en 2015 </figcaption>
+					</figure>
+					<!--*************-->
+				
+					<p>Lionel Messi, parfois surnommé Leo Messi, né le 24 juin 1987 à Rosario, est un footballeur international
+					argentin évoluant au poste d'attaquant au FC Barcelone.</p>
+
+					<p>Considéré comme l'un des plus grands joueurs de tous les temps, il est le seul footballeur à avoir remporté 
+					le Ballon d'or à cinq reprises. Auteur de plus de 500 buts et 200 passes décisives en carrière, il est le meilleur
+					buteur de l'histoire du championnat d'Espagne, du FC Barcelone et de l'équipe d'Argentine. Il détient depuis 2012
+					le record mondial du nombre de buts inscrits sur une saison toutes compétitions confondues et le record de buts sur
+					une saison dans un championnat européen. Il est aussi le seul footballeur à avoir terminé quatre fois consécutivement
+					meilleur buteur de la Ligue des champions, et le premier joueur triple vainqueur du Soulier d'or européen. Il est enfin 
+					le deuxième meilleur buteur de l'histoire de la Ligue des champions après Cristiano Ronaldo.</p>
+
+					<p>Formé dans sa ville natale de Rosario au sein du club des Newell's Old Boys, il rejoint l'équipe junior du FC Barcelone
+					à treize ans et signe son contrat professionnel en 2003. Il est depuis devenu le sixième joueur le plus capé de l'histoire du club.</p>
+					
+					<!--Image de l'equipe de Barcelone-->
+					<figure id="barc">
+						<img src="../images/bar.jpg" alt="bar">
+						<figcaption>L'équipe de Barcelone</figcaption>
+					</figure>
+					<!--*************-->
+					
+					<p class="marg">Avec trente titres remportés dont quatre Ligues des champions, huit championnats d'Espagne, quatre Coupes du Roi, six Supercoupes 
+					d'Espagne, trois Supercoupes d'Europe, trois Coupes du monde des clubs, une médaille d'or aux Jeux olympiques de 2008 et une Coupe du
+					monde des moins de 20 ans, il est le joueur le plus titré du FC Barcelone (avec Andrés Iniesta) et d'Argentine. Il est élu meilleur
+					joueur de la Coupe du monde 2014 dont son équipe termine vice-championne. Il atteint également la finale de la Copa América en 2007,
+					2015 et 2016 mais n'a jamais remporté de titre en sélection. Il annonce publiquement sa retraite internationale après ce dernier échec
+					avant de se raviser et de revenir afin de continuer à jouer les éliminatoires de la Coupe du monde 2018 avec l'Albiceleste.</p><br>
+					
+					<!--Image de l'equipe d'Argentine-->
+					<figure id="arg">
+						<img src="../images/arg.png" alt="arg">
+						<figcaption>L'équipe de l'Argentine</figcaption>
+					</figure>
+					<!--*************-->
+					
+					<p>Il fait partie du onze des meilleurs footballeurs de tous les temps établi par World Soccer, tandis que l'Equipe le désigne 
+					troisième meilleur joueur sud-américain de l'histoire. The Sun l'inclut dans l'équipe idéale de la première décennie du XXIe 
+					siècle et l'IFFHS fait de lui le deuxième meilleur buteur du début du XXIe siècle. Neufs années consécutivement, de 2007 à 2015,
+					il est présent dans le onze type de la FIFA et six fois consécutivement dans le onze type annuel de l'UEFA. Il est aussi désigné 
+					huit fois « footballeur argentin de l'année », cinq fois « meilleur joueur de l'année » en Espagne, ainsi que deuxième meilleur
+					joueur de la Ligue des champions durant ces vingt dernières années après Zinédine Zidane.</p>
+
+					<p>Sa notoriété dépasse le monde du sport. Il est nommé trois fois dans le classement des personnalités les plus influentes 
+					de la planète par le magazine Time en 2011, 2012 et 2013 et est le premier footballeur de l'histoire à faire la une du magazine.
+					Ambassadeur de l'UNICEF, il créé une fondation d'aide à l'enfance.</p>
+					
+					
+					<h4 id="sty"><u>Style de jeu</u>:</h4>
+						
+						<!--Image de nessi avec la balle-->
+						<figure id="mest">
+							<img src="../images/mest.jpg" alt="mest">
+							<figcaption>Lionel Messi balle au pied sous <br> le maillot de l'Albiceleste <br> le 9 février 2011.</figcaption>
+						</figure>
+						<!--*************-->
+						
+						<br>
+						<p>De par son style de jeu semblable et sa taille, Messi est souvent comparé à Diego Maradona. Son centre de gravité,
+						inférieur à la plupart des autres joueurs, lui permet d'être plus agile, de changer de direction plus rapidement et d'éviter 
+						les tacles plus facilement. Ses jambes, courtes et puissantes, lui permettent d’exceller dans les accélérations brèves,
+						sa conduite de balle lui permet d'en garder le contrôle en dribblant, même à haute vitesse. Il peut ainsi éliminer ses adversaires
+						qui pensent toujours pouvoir intervenir au dernier moment, mais qui sont presque toujours pris par la vitesse et le timing du dribble,
+						et doivent soit le laisser passer, soit faire faute pour l'arrêter. Son ancien entraineur du FC Barcelone, Josep Guardiola explique que 
+						« Messi est le seul joueur qui court plus rapidement avec la balle que sans».</p>
+					
+					
+						<br><br>
+					<h4 id="pnt"><u>Les point culminants de sa carrière</u>:</h4>
+						
+						<!--Video des meilleurs moments de messi-->
+						<video width="320" height="240" controls poster="../images/thumb.jpg">
+							<source src="../videos/car.mp4" type="video/mp4">
+						</video>
+						<!--*************-->
+		</div>
+		
+		<div>
+			<!--Image retour-->
+			<a href="messi.html"><img id="retour" src="../images/ball.jpg" alt="retour" title="retour haut de page"></a>
+			<!--*************-->
+		
+			<!--Style hr-->
+			<hr class="top">
+			<hr class="bottom">	
+			<!--*************-->
+		</div>
+		
+		<footer>
+			<p><strong>Source: </strong> <a href="https://fr.wikipedia.org/wiki/Lionel_Messi#Notes_et_r.C3.A9f.C3.A9rences" target="_blank">Wikipedia, Lionel Messi</a></p>
+			<p>Ce TP est réalisé par Sami Zaizafoun dans le cadre d'un TP</p>
+			<p><small>Copyright &copy; etudiants de L1 de l'<abbr title=" Universite de Caen Normandie">UCN </abbr>  All rights reserved.</small></p>
+		</footer>  
+	</body>
+</html>

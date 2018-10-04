@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta  charset="utf-8" />
+		<title> World Cup 2014</title>
+		
+		<!--Faire appel au .css+.js-->
+		<link rel="stylesheet"  type="text/css"  media="screen" href="style/commun.css" />
+		<link rel="stylesheet"  type="text/css"  media="screen" href="style/accueil.css" />
+		<script src="JS/monscript.js"></script>
+		<!--*************-->
+		
+		<link rel="shortcut icon" href="images/logo.ico"/>
+	</head>		
+	<body>
+		<!--L'image du haut-->
+		<header>
+			<a href="accueil.html"><img src="images/home.png" id="homeb" alt="home"></a>
+			<span id="menub" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</header>
+		<!--*************-->
+		
+		<!--Menu sur le cote-->
+		<aside>
+		<nav id="open" class="navigation">
+		<a href="#" class="buttons" id="closebtn" onclick="closeNav()">&times;</a> 
+		
+		<!--Musique-->
+		<audio id="music">
+			<source src="music/theme.ogg" type="audio/ogg">
+			<source src="music/theme.mp3" type="audio/mp3">
+  		</audio> 
+		<a href="#" class="buttons" id="play-pause" onclick="music()">&#9654;</a>
+		<a href="#" class="buttons" id="volume" onclick="volume()">&#128265;</a>
+		<input id="bar" type="range" min="0" max="1" step="0.01" value="0.4" onchange="change();changeV(this.value)" />		
+		<!--*************-->
+		
+		  <ul class="mainmenu">
+			<li class="main"><a class="active" href="accueil.html">Accueil</a>
+				<ul class="menu submenu">
+					<li><a href="accueil.html#stad">Stade Maracanã</a>
+						<ul class="menu submenu2">
+							<li><a href="accueil.html#his">Historique</a></li>
+							<li><a href="accueil.html#arch">Architecture du stade</a></li>
+						</ul>
+					</li>
+					<li><a href="accueil.html#cou">La Coupe du Monde en 2014</a>
+						<ul class="menu submenu2">
+							<li><a href="accueil.html#his1">Historique</a></li>
+							<li><a href="accueil.html#pre">Préparation de l’événement</a>
+								<ul class="menu submenu3">
+									<li><a href="accueil.html#org">Désignation du pays organisateur</a></li>
+									<li><a href="accueil.html#log">Désignation du logo</a></li>
+								</ul>
+							</li>
+							<li><a href="accueil.html#fin">La finale</a></li>
+							<li><a href="accueil.html#bal">Ballon d'or du meilleur joueur</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a href="pages/rio_de_janeiro.html">Rio de Janeiro</a>
+				<ul class="menu submenu">
+					<li><a href="pages/rio_de_janeiro.html#his3">L'histoire du pays</a></li>
+					<li><a href="pages/rio_de_janeiro.html#si">Sites touristiques</a>
+						<ul class="menu submenu2">
+							<li><a href="pages/rio_de_janeiro.html#pao">Pão de Açúcar</a></li>
+							<li><a href="pages/rio_de_janeiro.html#cor">Corcovado</a></li>
+							<li><a href="pages/rio_de_janeiro.html#cop">Copacabana et Ipanema</a></li>
+						</ul>
+					</li>
+					<li><a href="pages/rio_de_janeiro.html#sp">Les sports</a>
+						<ul class="menu submenu2">
+							<li><a href="pages/rio_de_janeiro.html#ft">Football</a></li>
+							<li><a href="pages/rio_de_janeiro.html#jx">Jeux panaméricains</a></li>
+							<li><a href="pages/rio_de_janeiro.html#jo">Jeux olympiques</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="main"><a href="pages/hist.html">L'histoire du football</a>
+				<ul class="menu submenu">
+					<li><a href="pages/hist.html#qqs">Quelques informations générales</a></li>
+					<li><a href="pages/hist.html#reg">Les règles du jeu</a></li>
+					<li><a href="pages/hist.html#arb">L'arbitre</a></li>
+					<li><a href="pages/hist.html#sup">Les supporters</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href="pages/allemagne.html">L'équipe d'Allemagne</a>
+				<ul class="menu submenu">
+					<li><a href="pages/allemagne.html#his2">L'histoire de l'épquipe</a></li>
+					<li><a href="pages/allemagne.html#pal">Palmarès</a></li>
+					<li><a href="pages/allemagne.html#eq">Équipe actuelle</a></li>
+					<li><a href="pages/allemagne.html#vain">Vainqueurs de la coupe du monde</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href="pages/messi.html">Lionel Messi</a>
+				<ul class="menu submenu">
+					<li><a href="pages/messi.html#bio">Biographie</a></li>
+					<li><a href="pages/messi.html#sty">Style de jeu</a></li>
+					<li><a href="pages/messi.html#pnt">Les point culminants de sa carrière</a></li>
+				</ul>
+			</li>
+		  </ul>
+		</nav>
+		</aside>
+		<!--*************-->
+		
+		<div>
+			<h3 id="stad"><u>Stade Maracanã</u>:</h3>
+				<h4 id="his"><u>Historique</u>:</h4>
+					
+					<!--Image du stade-->
+					<figure id="stade">
+						<img src="images/maracana.jpg" alt="stade">
+						<figcaption> Stade de Maracanã en 2014 </figcaption>
+					</figure>
+					<!--*************-->
+					
+					<p>Le stade Maracanã est un stade de football situé à <a class="nol" href="pages/rio_de_janeiro.html">Rio de Janeiro</a> au Brésil. 
+					Inauguré le 16 juin 1950 pour la Coupe du monde de 1950, l’Estádio Municipal est dès sa construction appelé du nom du quartier 
+					Maracanã où il a été construit. Si sa capacité initiale est de plus de 200 000 places, un record mondial à l'époque, elle a été 
+					depuis progressivement réduite à 78 838 places en vue de la Coupe du monde 2014 et les Jeux olympiques d'été de 2016.</p>
+				
+					<p>Appartenant à l'État de Rio de Janeiro, le stade accueille les plus grands événements sportifs ou musicaux. Outre le 
+					match décisif de la Coupe du monde 1950 et la finale de celle de 2014, le stade Maracanã est utilisé par les grands clubs 
+					de Rio de Janeiro pour leurs matchs de prestige ou championnat brésilien.</p><br>
+					
+				<h4 id="arch"><u>Architecture du stade</u>:</h4>
+				
+					<p>Le stade a une forme ovale, pour une superficie de presque 200 000 m&sup2; et une capacité initiale de 220 000 spectateurs,
+					ce qui en fait l'un des stades les plus grands au monde. Il est intégré dès sa construction dans un complexe sportif conçu
+					par une équipe d'architectes brésiliens composée de Miguel Feldman, Waldir Ramos, Raphael Galvão, Oscar Valdetaro, Orlando Azevedo,
+					Antônio Dias Carneiro et Pedro Paulo Bernardes Bastos. Le chantier s'est ouvert en 1948 sous la direction de l'ingénieur Paulo 
+					Pinheiro Guedes et le stade de football est inauguré seulement deux ans plus tard, juste à temps pour accueillir la Coupe du monde
+					de 1950. La première phase de travaux ne s'achève cependant qu'en 1954.</p>
+
+					<p>En 1999, le stade fait l'objet d'une vague de travaux pour pouvoir accueillir la Coupe du monde des clubs de la FIFA. La capacité
+					est alors réduite de 140 000 à 103 000 places. Le projet de la rénovation pour la Coupe du monde de 2014 et les Jeux olympiques de
+					2016 est plus lourd, afin de s'aligner sur les règles de la FIFA, mais il se veut respectueux de la structure originale du stade.
+					La façade, classée par l'Institut national du patrimoine artistique et historique (IPHAN), est conservée. L'anneau inférieur du stade
+					est par contre démoli et remplacé par un nouvel anneau, tandis qu'un nouveau toit est construit.</p>
+					
+					<p>À l'issue des travaux de 2010-2013, qui a nécessité le concours de 21 000 ouvriers et dont le coût (plus de 300 millions d'euros 
+					pour un stade rénové cinq ans plus tôt) est sujet à polémique, la capacité officielle du stade est réduite à 78 838 places, toutes 
+					assises. Le Maracanã reste cependant le plus grand stade du Brésil et l'un des plus grands d'Amérique du Sud. Pour les matchs
+					de la Coupe du monde, la FIFA réduit la capacité du stade à 74 738 places.</p>
+					
+					<!--Image sur l'evolution du stade-->
+					<figure class="evo">
+						<img src="images/face.jpg" alt="face">
+						<figcaption> Façade du stade </figcaption>
+					</figure>
+					<figure class="evo">
+						<img src="images/2006.jpg" alt="2006">
+						<figcaption> Vue des tribunes en 2006 </figcaption>
+					</figure>
+					<figure class="evo">
+						<img src="images/2013.jpg" alt="2013">
+						<figcaption> Vue des tribunes en 2013 </figcaption>
+					</figure>
+					<!--*************-->
+		</div>
+		<br><br>
+		<div id="top">
+			<h3 id="cou"><u>La Coupe du Monde en 2014</u>:</h3>
+				<h4 id="his1"><u>Historique</u>:</h4>
+				
+					<p>La Coupe du monde de football de 2014 est la 20e édition de la Coupe du monde de football, compétition organisée par la FIFA 
+					et qui réunit les trente-deux meilleures sélections nationales de football. Sa phase finale a eu lieu à l'été 2014, du 12 juin 2014 
+					au 13 juillet 2014, au Brésil. Avec le pays organisateur, toutes les équipes championnes du monde depuis 1930 (Uruguay, Italie, Allemagne, 
+					Angleterre, Argentine, France et Espagne) se sont qualifiées pour cette compétition. Elle est aussi la première compétition internationale
+					à laquelle participe la Bosnie-Herzégovine. Le tirage au sort des huit groupes de quatre équipes du premier tour était effectué le 6 décembre 2013
+					à Costa do Sauípe.</p>
+					
+				<h4 id="pre"><u>Préparation de l’événement</u>:</h4>
+					<!--Les sous-sous-titres-->
+					<h5 id="org"><u>Désignation du pays organisateur</u>:</h5>
+				
+						<p>Le 7 mars 2003, la FIFA annonce que la Coupe du monde sera organisée en Amérique du Sud pour la première fois depuis l'Argentine en 1978,
+						en accord avec sa nouvelle politique, qui veut que l'organisation de la phase finale de la coupe tourne à travers les différentes confédérations 
+						continentales1 (poursuivant ainsi sur la lancée des dernières compétitions, Asie en 2002 avec le Japon et la Corée du Sud, Europe en 2006 avec 
+						l'Allemagne et Afrique en 2010 avec l'Afrique du Sud).</p>
+
+						<p>Le 17 mars 2007, les différentes fédérations du CONMEBOL, la confédération sud-américaine de football, adoptent le Brésil comme candidat unique de
+						la zone, et ce à l'unanimité. Le Brésil dépose sa candidature officielle le 31 juillet 2007. Le 16 juillet 2006, la Colombie se porte candidate
+						mais le 11 avril 2007, elle retire sa candidature en raison des nombreux soutiens à la candidature brésilienne.</p>
+
+						<p>Durant le mois de mai 2007, la candidature de la Bolivie crée la polémique. Elle est écartée par la FIFA, faute d'avoir des stades situés à
+						moins de 2 500 mètres d'altitude, nouvelle norme d'altitude maximale pour les matchs internationaux. L'Argentine, le Venezuela et le Paraguay 
+						apportent leur soutien à la Bolivie contre le veto de la FIFA pendant que la Colombie, le Pérou, et l'Équateur menacent, avec la Bolivie,
+						de boycotter la Copa América 2007 au Venezuela puis le Mondial 2010 en Afrique du Sud.</p>
+
+						<p>Le 30 octobre 2007, le Brésil, seul candidat, est désigné pays hôte de la Coupe du monde 2014. Il s'agit de la seconde Coupe du monde organisée dans 
+						ce pays après celle de 1950.</p>
+					
+					<h5 id="log"><u>Désignation du logo</u>:</h5>
+					
+						<figure id="logo">
+							<img src="images/logo.jpg" alt="logo">
+						</figure>
+					
+						<p>L'emblème officiel de l’édition brésilienne imite la forme du trophée actuel de la Coupe du monde, composée de trois mains de verrouillage qui se
+						réunissent pour former un ballon. Alors que les trois mains entrelacées symbolisent l’aspect humanitaire, les couleurs de ce logo sont le vert, le jaune 
+						et le rouge. Le design de ce logo intitulé « Inspiration » et créé par l'agence brésilienne Africa est dévoilé le 8 juillet 2010, au Sandton Convention
+						Centre de Johannesburg, un jury composé de sept personnalités a choisi le vainqueur parmi les 125 propositions de vingt-cinq agences brésiliennes.</p>
+					<!--***Fin de sous-sous-titres****-->
+					
+				<h4 id="fin"><u>La finale</u>:</h4>
+				
+					<p>La finale de la Coupe du monde de football 2014 est le match concluant la 20e Coupe du monde. Elle a lieu le 13 juillet 2014 au stade Maracanã 
+					de Rio de Janeiro, à 16 heures heure locale.</p>
+
+					<p>Elle oppose <a class="nol" href="pages/allemagne.html">l'Allemagne</a>, qui s'est qualifiée aisément lors de sa demi-finale face au Brésil le 8 juillet, 
+					et l'Argentine, qui s'est qualifiée face aux Pays-Bas le 9 juillet.</p>
+
+					<p>Troisième finale de Coupe du monde opposant les deux formations après 1986 et 1990, elle se conclut aux prolongations par la victoire de l'Allemagne 1-0.
+					Le but décisif est inscrit par Mario Götze sur une passe d'André Schürrle à la 113e minute. La Mannschaft remporte ici son quatrième trophée planétaire.</p>
+					
+					<!--Video du but gagnat-->
+					<video width="320" height="240" controls>
+						<source src="videos/goal.mp4" type="video/mp4">
+					</video> 
+					<!--*************-->
+					
+				<h4 id="bal"><u>Ballon d'or du meilleur joueur</u>:</h4>
+				
+					<p>Le Ballon d'or Adidas est la récompense attribuée au meilleur joueur de la Coupe du monde 2014. Les deuxième et troisième joueurs reçoivent respectivement 
+					les Ballons d’Argent et de Bronze.</p>
+					
+					<p> Les trois premier nommés sont: Lionel Messi, Thomas Müller et Arjen Robben. La remise du trophée a été donné à <a class="nol" href="pages/messi.html">
+					Lionel Messi</a>.</p>
+		</div>
+		
+		<div>
+			<!--Image retour-->
+			<a href="accueil.html"><img id="retour" src="images/ball.jpg" alt="retour" title="retour haut de page"></a>
+			<!--*************-->
+		
+			<!--Style hr-->
+			<hr class="top">
+			<hr class="bottom">	
+			<!--*************-->
+		</div>
+		
+		<footer>
+			<p><strong>Source: </strong> <a href="https://fr.wikipedia.org/wiki/Coupe_du_monde_de_football_de_2014#Finale" target="_blank">Wikipedia, Coupe du Monde</a> et 
+			<a href="https://fr.wikipedia.org/wiki/Stade_Maracan%C3%A3" target="_blank">Wikipedia, Stade Maracanã</a></p>
+			<p>Ce TP est réalisé par Sami Zaizafoun dans le cadre d'un TP</p>
+			<p><small>Copyright &copy; etudiants de L1 de l'<abbr title=" Universite de Caen Normandie">UCN </abbr>  All rights reserved.</small></p>
+		</footer>
+	</body>
+</html>

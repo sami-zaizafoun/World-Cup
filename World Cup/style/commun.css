@@ -1,0 +1,257 @@
+html { 
+  	font-family: purisa , arial, helvetica, sans-serif;
+}
+  
+body {
+	position:absolute;
+  	width: 100%;
+  	margin-left: 20%;
+	padding: 2%;
+}
+
+/*--Block texte--*/
+div{
+    margin-right:auto;
+	width:1100px;
+}
+/*--------*/
+
+/*--Fond d'ecran (Logo Brésil)--*/
+header{
+	background-image: url("../fonds/fond.jpg");
+	width:1100px;
+	height:150px;
+}
+
+#menub{
+	position:absolute;
+	margin-top:95px;
+	margin-left:20px;
+}
+
+#homeb{
+	position:absolute;
+	width:43px;
+	height:43px;
+	margin-top:95px;
+	margin-left:50px;	
+}
+/*--------*/
+
+/*----Les grands titre----*/
+h3{
+	font-size:25px;
+	color: #43b4e5;
+}
+
+h4{
+	margin-left: 3%;
+	font-size: 18px;
+	color: #5ff75d;
+}
+
+h5{
+	margin-left: 6%;
+	font-size: 14px;
+}
+/*-----------*/ 
+
+/*--Style pour le menu--*//*----------*//*----------*//*----------*//*----------*//*----------*/
+.navigation {
+	float:left;
+	position:absolute;
+	margin-right: 2%;
+	background-color: #f1f1f1;
+	width: 0px;
+	height: 90%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	z-index:1;
+}
+/*----------*/
+
+/*-boutons--*/
+.buttons{
+	position: absolute;
+	top: 0;
+	text-decoration: none;
+	color: #92e500;
+}
+
+/*-musique-*/
+#play-pause{    
+    font-size: 34px;
+    margin-left: 15px;	
+}
+/*----------*/
+
+/*-volume-*/
+#volume{
+	margin-top:8px;
+	font-size: 32px;
+    margin-left: 60px;
+}
+/*----------*/
+
+#bar{
+	display:none;
+	margin-bottom:5px;
+}
+
+/*-fermer menu--*/
+.navigation #closebtn {
+    right: 13px;
+    font-size: 36px;
+    margin-left: 50px;
+	color: #92e500;
+}
+/*----------*/
+
+/*-Cacher le contenu non choisi--*/
+.menu {
+	overflow: hidden;
+	max-height: 0;
+	transition: all 3s ease-out;
+}
+/*----------*/
+
+/*--Enlever le style des menus--*/
+.mainmenu, .submenu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*----------*/
+
+/*--Enlever le style des sous-menus--*/
+.submenu, .submenu2 {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*----------*/
+
+/*--Enlever le style des sous-menus*2--*/
+.submenu2, .submenu3{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*----------*/
+
+/*--Fond d'ecran pour les liens--*/
+.mainmenu a {
+	display: block;
+	background-color: #f1f1f1;
+	text-decoration: none;
+	padding: 10px;
+	color: #000;
+}
+/*----------*/
+
+/*--Couleur sous-menu--*/
+.submenu a {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	color: #000;
+	background-color: #43b4e5;
+}
+/*----------*/
+
+/*--Couleur sous-sous-menu--*/
+.submenu2 a {
+	background-color: #0079e5;
+}
+/*----------*/
+
+/*-Cacher le contenu non choisi (sous menu*2)--*/
+.submenu3 a {
+	background-color: #9a50f9;
+}
+/*----------*/
+
+/*--Changement de couleur avec la souris (menu)--*/
+.submenu a:hover {
+	background-color: #00ffe8;
+}
+/*----------*/
+
+/*--Changement de couleur avec la souris (menu)--*/
+.submenu2 a:hover {
+	background-color: #bebebe;
+}
+/*----------*/
+
+/*--Changement de couleur avec la souris (menu)--*/
+.submenu3 a:hover {
+	background-color: #727272;
+}
+/*----------*/
+
+/*--Afficher le sous-menu--*/
+.mainmenu li:hover .submenu {
+	display: block;
+	max-height: 500px;
+}
+/*----------*/
+
+/*--Afficher le sous-sous-menu--*/
+.submenu li:hover .submenu2 {
+	display: block;
+	max-height: 500px;
+}
+/*----------*/
+
+/*--Afficher le sous-sous-menu*2--*/
+.submenu2 li:hover .submenu3 {
+	display: block;
+	max-height: 500px;
+}
+/*----------*/
+
+/*--Page actuel--*/
+.main a.active {
+    background-color: #92e500;
+}
+/*----------*//*----------*//*----------*//*----Fin menu----*//*----------*//*----------*//*----------*/
+
+/*nom+copyright*/
+footer{
+	margin-top:80px;
+}
+/*----------*/
+
+/*Style pour le hr*/
+.top{
+	width:1250px;
+	display: block; 
+	content: ""; height: 30px;
+	border-style: solid; 
+	border-color: #43b4e5; 
+	border-width: 0 0 2px 0; 
+	border-radius: 20px;
+	margin-top:20px;
+	margin-bottom:-0.8%;
+}
+
+.bottom{
+	position:absolute;
+	width:1250px;
+	height: 30px; 
+	border-style: solid; 
+	border-color: #43b4e5; 
+	border-width: 2px 0 0 0; 
+	border-radius: 20px;
+}
+/*---------*/
+
+/*---Bouton retour--*/
+#retour{
+	height: 60px;
+	width:60px;
+	margin-top:50px;
+	margin-left:550px;
+}
+/*---------*/
